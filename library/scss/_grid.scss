@@ -1,0 +1,66 @@
+/******************************************************************
+Site Name: 
+Author: Efeqdev, LLC
+
+Stylesheet: Grid Stylesheet
+
+This grid is a combination of the Bones grid and the Twitter Bootstrap grid.
+Taking advantage of Bootstrap's offsets.
+
+******************************************************************/
+
+.row {
+	*zoom: 1;
+}
+.row:before,
+.row:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.row:after {
+	clear: both;
+}
+
+.onecol    { width: 5.801104972%;  }       /* 4.85%;  } /* grid_1  */
+.twocol    { width: 14.364640883%; }       /* 13.45%; } /* grid_2  */
+.threecol  { width: 22.928176794%; }       /* 22.05%; } /* grid_3  */
+.fourcol   { width: 31.491712705%; }       /* 30.75%; } /* grid_4  */
+.fivecol   { width: 40.055248616%; }       /* 39.45%; } /* grid_5  */
+.sixcol    { width: 48.618784527%; }       /* 48%;    } /* grid_6  */
+.sevencol  { width: 57.182320438000005%; } /* 56.75%; } /* grid_7  */
+.eightcol  { width: 65.74585634900001%; }  /* 65.4%;  } /* grid_8  */
+.ninecol   { width: 74.30939226%; }        /* 74.05%; } /* grid_9  */
+.tencol    { width: 82.87292817100001%; }  /* 82.7%;  } /* grid_10 */
+.elevencol { width: 91.436464082%; }       /* 91.35%; } /* grid_11 */
+.twelvecol { width: 99.999999993%; }       /* 100%;   } /* grid_12 */
+
+// layout & column defaults
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+  min-height: 1px;
+}
+
+// Offset overrides
+.offset1    { margin-left: 5.801104972%;  }       /* 4.85%;  } /* grid_1  */
+.offset2    { margin-left: 14.364640883%; }       /* 13.45%; } /* grid_2  */
+.offset3	{ margin-left: 22.928176794%; }       /* 22.05%; } /* grid_3  */
+.offset4	{ margin-left: 31.491712705%; }       /* 30.75%; } /* grid_4  */
+.offset5	{ margin-left: 40.055248616%; }       /* 39.45%; } /* grid_5  */
+.offset6    { margin-left: 48.618784527%; }       /* 48%;    } /* grid_6  */
+.offset7	{ margin-left: 57.182320438000005%; } /* 56.75%; } /* grid_7  */
+.offset8	{ margin-left: 65.74585634900001%; }  /* 65.4%;  } /* grid_8  */
+.offset9	{ margin-left: 74.30939226%; }        /* 74.05%; } /* grid_9  */
+.offset10   { margin-left: 82.87292817100001%; }  /* 82.7%;  } /* grid_10 */
+.offset11	{ margin-left: 91.436464082%; }       /* 91.35%; } /* grid_11 */
+.offset12	{ margin-left: 99.999999993%; }       /* 100%;   } /* grid_12 */
+
+.first {
+  margin-left: 0;
+}
+
+.last {
+  float: right;
+}
