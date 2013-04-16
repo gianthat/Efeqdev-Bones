@@ -6,7 +6,9 @@ dashboard. Updates to this page are coming soon.
 It's turned off by default, but you can call it
 via the functions file.
 
-Developed by: Eddie Machado
+Developed by: Efeqdev Design and Web Development
+URL: http://efeqdev.com
+Adapted from brilliant work by Eddie Machado
 URL: http://themble.com/bones/
 
 Special Thanks for code & inspiration to:
