@@ -1,15 +1,17 @@
-Bones - A Lightweight Wordpress Developer Template
-
-This theme is meant to make development easier & take
-advantage of modern web development & design techniques.
-For more information, please visit:
-
-http://themble.com/bones/
-
-Author: Eddie Machado
+Efeqdev Bones - A Lightweight Wordpress Developer Template
 
 /******************************************************************
-BONES CHANGE LOG & HISTORY
+EFEQDEV BONES CHANGE LOG & HISTORY
+******************************************************************/
+/* v1.4 update */
+- fixed bad wrap width in iPad portrait
+- commented out custom post type reference in functions
+- included Google Maps script (commented out)
+- included the Gmaps javascript library (commented out)
+- removed LESS files
+
+/******************************************************************
+ORIGINAL BONES CHANGE LOG & HISTORY
 ******************************************************************/
 
 /* v1.3 update */
