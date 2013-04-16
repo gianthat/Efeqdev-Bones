@@ -1,11 +1,13 @@
 <?php
-/* Welcome to Bones :)
+/* Welcome to Efeqdev Bones
 This is the core Bones file where most of the
 main functions & features reside. If you have
 any custom functions, it's best to put them
 in the functions.php file.
 
-Developed by: Eddie Machado
+Developed by: Efeqdev Design and Web Development
+URL: http://efeqdev.com
+Adapted from brilliant work by Eddie Machado
 URL: http://themble.com/bones/
 */
 
@@ -133,10 +135,10 @@ function bones_scripts_and_styles() {
     wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 
     // register GMaps
-    wp_register_script( 'gmaps', get_stylesheet_directory_uri() . '/library/js/libs/gmaps.js', array(), '', false); 
+    // wp_register_script( 'gmaps', get_stylesheet_directory_uri() . '/library/js/libs/gmaps.js', array(), '', false);
 
     // Google Maps Sensor
-    wp_register_script( 'gsensor', 'http://maps.google.com/maps/api/js?sensor=true', array(), '', false);
+    // wp_register_script( 'gsensor', 'http://maps.google.com/maps/api/js?sensor=true', array(), '', false);
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -157,8 +159,8 @@ function bones_scripts_and_styles() {
     */
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'bones-js' );
-    wp_enqueue_script( 'gsensor' );
-    wp_enqueue_script( 'gmaps' );
+    // wp_enqueue_script( 'gsensor' );
+    // wp_enqueue_script( 'gmaps' );
 
   }
 }
