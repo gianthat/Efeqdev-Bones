@@ -224,7 +224,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -374,7 +374,7 @@ form {
  */
 /* line 359, ../scss/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -667,7 +667,7 @@ http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
 /* line 124, ../scss/_mixins.scss */
 span.amp {
-  font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif !important;
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
@@ -1024,7 +1024,7 @@ and more scalable.
 */
 /* line 195, ../scss/_base.scss */
 .nav {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-bottom: 0;
   /* end .menu li */
   /* highlight current page */
@@ -1843,7 +1843,7 @@ you can add resource intensive styles.
   .nav li ul.sub-menu,
   .nav li ul.children {
     width: 200px;
-    border: 1px solid #cccccc;
+    border: 1px solid #ccc;
     border-top: 0;
     position: absolute;
     display: none;
@@ -1866,7 +1866,7 @@ you can add resource intensive styles.
     border-right: 0;
     display: block;
     width: 180px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
   }
   /* line 112, ../scss/_768up.scss */
   .nav li ul.sub-menu li:last-child a,
@@ -1890,7 +1890,7 @@ you can add resource intensive styles.
 
   /* line 158, ../scss/_768up.scss */
   .widgettitle {
-    border-bottom: 2px solid #444444;
+    border-bottom: 2px solid #444;
     margin-bottom: 0.75em;
   }
 
@@ -1941,7 +1941,10 @@ you can add resource intensive styles.
   /* end .footer-links */
 }
 @media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .wrap: 748px;
+  /* line 64, ../scss/style.scss */
+  .wrap {
+    width: 748px;
+  }
 }
 /*
 DESKTOP
@@ -2087,7 +2090,7 @@ be set to display none.
 
   /* line 23, ../scss/_print.scss */
   a, a:visited {
-    color: #444444 !important;
+    color: #444 !important;
     text-decoration: underline;
   }
   /* line 28, ../scss/_print.scss */
@@ -2108,7 +2111,7 @@ be set to display none.
 
   /* line 44, ../scss/_print.scss */
   pre, blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
