@@ -22,46 +22,17 @@ body {
 	color: #565656;
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
+ul {
+	margin: 0;
+}
 
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover {
+		color: $link-hover;
+	}
+}
 
 /*********************
 LAYOUT & GRID STYLES
@@ -133,7 +104,8 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: lighter;
+	line-height: 1em;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -147,17 +119,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 
 h1, .h1 {
 	font-size: 2.5em;
-	line-height: 1.333em;
+	line-height: 1.0em;
 }
 
 h2, .h2 {
 	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	line-height: 1.0em;
 }
 
 h3, .h3 {
 	font-size: 1.125em;
+	line-height: 1em;
 }
 
 h4, .h4 {
@@ -269,266 +241,6 @@ POSTS & CONTENT STYLES
 #content {
 	margin-top: 2.2em;
 }
-
-		.hentry {
-
-			header {}
-
-			footer {}
-
-		} /* end .hentry */
-
-		.single-title,
-		.page-title {}
-
-		.single-title {}
-
-		.page-title {}
-
-		.archive-title { }
-
-		/* want to style individual post classes? Booya! */
-		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
-		.page {}            /* general article on a page style */
-		.attachment {}      /* general style on an attatchment */
-		.sticky {}          /* sticky post style */
-		.hentry {}          /* hentry class */
-		.category-slug {}   /* style by category (i.e. category-videos) */
-		.tag-slug {}        /* style by tag (i.e. tag-news) */
-
-		/* post meta */
-		.byline {
-			color: #999;
-
-			time {}
-		}
-
-		/* entry content */
-		.entry-content {
-
-			p {}
-
-
-			ul, ol, table, dl {}
-
-			ul, ol {
-
-				li {}
-
-			}
-
-			ul {
-
-				li {}
-
-			}
-
-			ol {
-
-				li {}
-
-			}
-
-			blockquote {
-
-				&:before {}
-
-			}
-
-			dl {}
-
-			dt {}
-
-			dd {
-				margin-left: 0;
-				font-size: 0.9em;
-				color: #787878;
-				margin-bottom: 1.5em;
-			}
-
-			img {
-				margin: 0 0 1.5em 0;
-				max-width: 100%;
-				height: auto;
-			}
-
-			/*
-			image alignment on a screen this size may be
-			a bit difficult. It's set to start aligning
-			and floating images at the next breakpoint,
-			but it's up to you. Feel free to change it up.
-			*/
-			.alignleft, img.alignleft {}
-			.alignright, img.alignright {}
-			.aligncenter, img.aligncenter {}
-
-			video, object {
-				max-width: 100%;
-				height: auto;
-			}
-
-			pre {
-				background: #eee;
-				border: 1px solid #cecece;
-				padding: 10px;
-			}
-
-		} /* end .entry-content */
-
-		.wp-caption {
-			background: #eee;
-			padding: 5px;
-
-			/* images inside wp-caption */
-			img {
-				margin-bottom: 0;
-				width: 100%;
-			}
-
-			p.wp-caption-text {
-				font-size: 0.85em;
-				margin: 4px 0 7px;
-				text-align: center;
-			}
-
-		} /* end .wp-caption */
-
-		/* image gallery styles */
-		.gallery {
-
-			dl {
-
-				a {}
-
-				img {}
-
-			}
-
-			dt {}
-
-			dd {}
-
-		} /* end .gallery */
-
-		/* gallery caption styles */
-		.gallery-caption {}
-
-		.size-full {}
-		.size-large {}
-		.size-medium {}
-		.size-thumbnail {}
-
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-
-.page-navigation,
-.wp-prev-next {
-	margin: 1.1em 0 2.2em;
-}
-	.bones_page_navi {
-
-		li {
-			float: left;
-			margin-left: 10px;
-
-			a {
-				padding: 3px 6px;
-				display: block;
-				text-decoration: none;
-				position: relative;
-
-				&:hover,
-				&:focus {
-					color: #f01d4f;
-					text-decoration: underline;
-				}
-			}
-
-		}
-
-		/* current page link */
-		li.bpn-current {
-			padding: 3px 6px;
-			border-bottom: 2px solid #f01d4f;
-			position: relative;
-
-			a {
-				/* hovering on current page link */
-				&:hover,
-				&:focus {}
-
-			}
-
-		} /* end .bones_page_navi .bpn-current */
-
-		/* common styles for page-navi links */
-		li.bpn-prev-link,
-		li.bpn-next-link {
-			font-weight: 700;
-
-			a {
-				padding: 0;
-			}
-		}
-
-		/* remove the bg on end links */
-		li.bpn-prev-link a:hover,
-		li.bpn-next-link a:hover,
-		li.bpn-first-page-link a:hover,
-		li.bpn-last-page-link a:hover {
-			background: none;
-		}
-
-		/* previous link */
-		li.bpn-prev-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-		/* next page link */
-		li.bpn-next-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-		/* first page link */
-		li.bpn-first-page-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-		/* last page link */
-		li.bpn-last-page-link {
-			a {
-				&:hover,
-				&:focus {}
-			}
-		}
-
-	} /* end .bones_page_navi */
-
-	/* fallback previous & next links */
-	.wp-prev-next {
-
-		ul {}
-
-		.prev-link {
-			float: left;
-		}
-
-		.next-link {
-			float: right;
-		}
-
-	} /* end .wp-prev-next */
 
 /******************************************************************
 COMMENT STYLES
